@@ -1,0 +1,51 @@
+# Wikipedia: Apple M4
+<!-- https://en.wikipedia.org/w/index.php?title=Apple_M4&oldid=1383909716 (2026-11-05T14:45:07Z), CC BY-SA 4.0 -->
+
+The Apple M4 is a series of ARM-based systems on a chip made by Apple, part of the Apple silicon series, including a central processing unit (CPU), a graphics processing unit (GPU), a neural processing unit (NPU), and a digital signal processor (DSP). The M4 SoC was introduced in May 2024 for the iPad Pro (7th generation), and is the fourth generation of the M series Apple silicon architecture, succeeding the Apple M3.
+
+== Design ==
+
+The M4 series is built upon TSMC's second-generation 3-nanometer process and contains 28 billion transistors.
+It is Apple's first SoC to reportedly use the ARMv9 CPU architecture. The M4 is based on ARMv9.2a. It supports the Scalable Matrix Extension (SME) but not the Scalable Vector Extension (SVE). Because of the lack of SVE support, the LLVM compiler officially flags the M4 as supporting ARMv8.7a.
+
+=== CPU ===
+The base M4 features an 8, 9 or 10-core design made up of three or four performance cores and four or six efficiency cores (with one performance core disabled on binned models)
+The M4 Pro features a 12 or 14-core CPU, with eight or ten performance cores and four efficiency cores. Meanwhile, the M4 Max features a 14 or 16-core CPU, with an optional two more performance cores than the M4 Pro.
+
+=== GPU ===
+The base M4 includes an 8, 9 (on iPad Air), or 10-core GPU, with hardware-accelerated ray tracing, dynamic caching, and mesh shading introduced with the M3. The M4 Pro has a 16 or 20-core GPU, while the M4 Max contains a 32 or 40-core GPU. 
+Apple claims that the ray tracing engine of the M4 family of GPUs is twice as fast as the M3.
+
+=== NPU ===
+The M4 Neural Engine has been significantly improved compared to its predecessor, with the advertised capability to perform up to 38 trillion operations per second, claimed to be more than double the advertised performance of the M3. The M4 NPU performs over 60× faster than the A11 Bionic, and is approximately 3× faster than the original M1.
+
+=== Memory ===
+The M4 is packaged with LPDDR5X unified memory, supporting 120GB/sec of memory bandwidth. The SoC is offered in 8GB, 12GB, 16GB, 24GB, and 32GB configurations, with the 8GB and 12GB configuration only being available on the iPad. 
+The M4 Pro is available with up to 64GB unified memory (Mac Mini) with a theoretical maximum bandwidth of 273GB/sec. The M4 Max is capable of addressing up to 128GB unified memory, with over half a terabyte per second (546GB/sec) of memory bandwidth, with a slightly reduced bandwidth (410GB/sec) for the binned 32-core M4 Max.
+
+== Performance ==
+Apple claims up to 50% more CPU performance and 4× more GPU performance on the M4 compared to the M2. The M4 competes for the highest-scoring consumer SoC for single-core benchmarks according to various sources such as the Geekbench benchmarking suite and Passmark Software's CPU benchmarks.  In doing so, M4's single-core performance competes with AMD's Ryzen 7 9700X and Intel's Core i9-14900K. 
+Meanwhile, in multithreaded performance, the M4 performs similarly to the M3 Pro and the product line as a whole competes with similar consumer level processors from Intel and AMD, such as the Intel Core Ultra and AMD Ryzen series.
+
+== Additional features ==
+A new display controller has also been implemented to support the iPad Pro (7th generation)'s Tandem OLED display.
+
+== Products that use the Apple M4 series ==
+
+=== M4 ===
+iPad Pro (M4)
+iMac (2024)
+Mac Mini (2024)
+MacBook Pro (14-inch, 2024)
+MacBook Air (2025)
+iPad Air (M4)
+
+=== M4 Pro ===
+Mac Mini (2024)
+MacBook Pro (14-inch and 16-inch, 2024)
+
+=== M4 Max ===
+MacBook Pro (14-inch and 16-inch, 2024)
+Mac Studio (2025)
+
+== Variants ==

@@ -1,0 +1,5 @@
+FROM ./Llama-3.2-1B-Instruct-Q4_K_M.gguf
+PARAMETER num_ctx 4096
+PARAMETER num_thread 4
+PARAMETER temperature 0.6
+PARAMETER stop "<|eot_id|>"

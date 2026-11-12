@@ -1,0 +1,27 @@
+bm25    R@1 0.83  R@4 0.94  R@10 1.00  MRR 0.889  1 ms
+dense   R@1 0.72  R@4 1.00  R@10 1.00  MRR 0.843  113 ms
+hybrid  R@1 0.92  R@4 1.00  R@10 1.00  MRR 0.951  115 ms
+closed             acc 0.000  false-IDK 0.50  IDK-on-unanswerable 0.50  TTFT 235 ms  total 4072 ms  prompt 64 tok
+hybrid:1:plain     acc 0.889  false-IDK 0.03  IDK-on-unanswerable 0.33  TTFT 1705 ms  total 4039 ms  prompt 251 tok
+hybrid:2:plain     acc 0.917  false-IDK 0.00  IDK-on-unanswerable 0.33  TTFT 2059 ms  total 4313 ms  prompt 404 tok
+hybrid:4:plain     acc 0.944  false-IDK 0.00  IDK-on-unanswerable 0.50  TTFT 4171 ms  total 6845 ms  prompt 701 tok
+hybrid:6:plain     acc 0.917  false-IDK 0.00  IDK-on-unanswerable 0.33  TTFT 5129 ms  total 8164 ms  prompt 1003 tok
+hybrid:1:strict    acc 0.667  false-IDK 0.31  IDK-on-unanswerable 0.83  TTFT 1968 ms  total 3879 ms  prompt 274 tok
+hybrid:2:strict    acc 0.694  false-IDK 0.19  IDK-on-unanswerable 1.00  TTFT 1091 ms  total 3364 ms  prompt 427 tok
+hybrid:4:strict    acc 0.917  false-IDK 0.11  IDK-on-unanswerable 0.67  TTFT 3872 ms  total 7316 ms  prompt 724 tok
+hybrid:6:strict    acc 0.806  false-IDK 0.11  IDK-on-unanswerable 0.67  TTFT 4659 ms  total 8049 ms  prompt 1026 tok
+latency k = 0 {'cold_ttft_ms': 301.8, 'warm_ttft_ms': 81.0, 'retrieval_ms': 0.0, 'prefill_ms': 290.9, 'prompt_tokens': 69.5, 'computed_tokens': 23.5, 'warm_cached': 61.7}
+latency k = 1 {'cold_ttft_ms': 2205.6, 'warm_ttft_ms': 232.9, 'retrieval_ms': 70.3, 'prefill_ms': 2108.7, 'prompt_tokens': 251.2, 'computed_tokens': 204.7, 'warm_cached': 242.3}
+latency k = 2 {'cold_ttft_ms': 3806.7, 'warm_ttft_ms': 217.0, 'retrieval_ms': 61.4, 'prefill_ms': 3722.0, 'prompt_tokens': 408.8, 'computed_tokens': 362.8, 'warm_cached': 400.7}
+latency k = 4 {'cold_ttft_ms': 6943.1, 'warm_ttft_ms': 224.9, 'retrieval_ms': 60.5, 'prefill_ms': 6849.5, 'prompt_tokens': 697.5, 'computed_tokens': 651.5, 'warm_cached': 688.8}
+latency k = 6 {'cold_ttft_ms': 10466.4, 'warm_ttft_ms': 225.8, 'retrieval_ms': 62.7, 'prefill_ms': 10367.9, 'prompt_tokens': 1002.3, 'computed_tokens': 956.3, 'warm_cached': 994.3}
+config                      acc falseIDK IDK|unans  prompt    TTFT   total pp tok/s cached
+closed                    0.000     0.50      0.50      64     235    4072     78.2   0.73
+hybridk1kplain            0.889     0.03      0.33     251    1705    4039     95.7   0.39
+hybridk1kstrict           0.667     0.31      0.83     274    1968    3879     95.9   0.34
+hybridk2kplain            0.917     0.00      0.33     404    2059    4313     92.5   0.55
+hybridk2kstrict           0.694     0.19      1.00     427    1091    3364     83.0   0.81
+hybridk4kplain            0.944     0.00      0.50     701    4171    6845     91.4   0.47
+hybridk4kstrict           0.917     0.11      0.67     724    3872    7316     90.9   0.53
+hybridk6kplain            0.917     0.00      0.33    1003    5129    8164     86.8   0.57
+hybridk6kstrict           0.806     0.11      0.67    1026    4659    8049     84.8   0.62

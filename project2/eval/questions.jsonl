@@ -1,0 +1,42 @@
+{"id": 1, "q": "Who founded the AI company DeepSeek?", "keys": [["Liang Wenfeng"]], "gold": "DeepSeek"}
+{"id": 2, "q": "In which city is DeepSeek based?", "keys": [["Hangzhou"]], "gold": "DeepSeek"}
+{"id": 3, "q": "Which hedge fund owns and funds DeepSeek?", "keys": [["High-Flyer"]], "gold": "DeepSeek"}
+{"id": 4, "q": "When did DeepSeek launch its DeepSeek-R1 model?", "keys": [["January 2025", "January 20, 2025"]], "gold": "DeepSeek"}
+{"id": 5, "q": "By how much did Nvidia's share price drop after DeepSeek became the most downloaded app on the US App Store?", "keys": [["18%", "18 percent"]], "gold": "DeepSeek"}
+{"id": 6, "q": "When did Meta release Llama 3?", "keys": [["April 18, 2024", "18 April 2024"]], "gold": "Llama (language model)"}
+{"id": 7, "q": "In which two sizes was Llama 3 first released?", "keys": [["8B", "8 billion"], ["70B", "70 billion"]], "gold": "Llama (language model)"}
+{"id": 8, "q": "How many tokens of data was Llama 3 trained on?", "keys": [["15 trillion"]], "gold": "Llama (language model)"}
+{"id": 9, "q": "How many experts does the Llama 4 Maverick model have?", "keys": [["128"]], "gold": "Llama (language model)"}
+{"id": 10, "q": "What is the context window of the Llama 4 Scout model?", "keys": [["10M", "10 million"]], "gold": "Llama (language model)"}
+{"id": 11, "q": "On what date was Google's Gemini model family announced?", "keys": [["December 6, 2023", "6 December 2023"]], "gold": "Gemini (language model)"}
+{"id": 12, "q": "Which three models made up the first version of Gemini?", "keys": [["Ultra"], ["Pro"], ["Nano"]], "gold": "Gemini (language model)"}
+{"id": 13, "q": "How large is the context window of Gemini 1.5?", "keys": [["one-million", "one million", "1 million", "1M"]], "gold": "Gemini (language model)"}
+{"id": 14, "q": "What is the official name of the image model nicknamed \"Nano Banana\"?", "keys": [["Gemini 2.5 Flash Image"]], "gold": "Gemini (language model)"}
+{"id": 15, "q": "Who is Nvidia's Blackwell GPU architecture named after?", "keys": [["David Blackwell"]], "gold": "Blackwell (microarchitecture)"}
+{"id": 16, "q": "On what date did Nvidia officially announce the Blackwell architecture?", "keys": [["March 18, 2024", "18 March 2024"]], "gold": "Blackwell (microarchitecture)"}
+{"id": 17, "q": "How many transistors does the dual-die Blackwell package contain?", "keys": [["208 billion"]], "gold": "Blackwell (microarchitecture)"}
+{"id": 18, "q": "Which TSMC process node is used for Blackwell datacenter GPUs?", "keys": [["4NP"]], "gold": "Blackwell (microarchitecture)"}
+{"id": 19, "q": "Which new 4-bit data format does Blackwell support?", "keys": [["MXFP4", "FP4"]], "gold": "Blackwell (microarchitecture)"}
+{"id": 20, "q": "When was the Apple M4 chip introduced, and in which device?", "keys": [["May 2024"], ["iPad Pro"]], "gold": "Apple M4"}
+{"id": 21, "q": "How many transistors does the Apple M4 contain?", "keys": [["28 billion"]], "gold": "Apple M4"}
+{"id": 22, "q": "How many operations per second can the Apple M4 Neural Engine perform?", "keys": [["38 trillion"]], "gold": "Apple M4"}
+{"id": 23, "q": "What memory bandwidth does the Apple M4 support?", "keys": [["120GB/s", "120 GB/s", "120GB/sec", "120 GB/sec"]], "gold": "Apple M4"}
+{"id": 24, "q": "Which team won UEFA Euro 2024?", "keys": [["Spain"]], "gold": "UEFA Euro 2024"}
+{"id": 25, "q": "What was the score of the UEFA Euro 2024 final?", "keys": [["2–1", "2-1"]], "gold": "UEFA Euro 2024"}
+{"id": 26, "q": "Which stadium hosted the UEFA Euro 2024 final?", "keys": [["Olympiastadion"]], "gold": "UEFA Euro 2024"}
+{"id": 27, "q": "Which team made its tournament debut at UEFA Euro 2024?", "keys": [["Georgia"]], "gold": "UEFA Euro 2024"}
+{"id": 28, "q": "From when to when were the 2024 Summer Olympics held?", "keys": [["26 July", "July 26"], ["11 August", "August 11"]], "gold": "2024 Summer Olympics"}
+{"id": 29, "q": "Which sport made its Olympic debut at Paris 2024?", "keys": [["breaking", "breakdancing"]], "gold": "2024 Summer Olympics"}
+{"id": 30, "q": "Who lit the Olympic cauldron at Paris 2024?", "keys": [["Teddy Riner"], ["Pérec", "Perec"]], "gold": "2024 Summer Olympics"}
+{"id": 31, "q": "How many gold medals did the United States win at the 2024 Summer Olympics?", "keys": [["40"]], "gold": "2024 Summer Olympics"}
+{"id": 32, "q": "What are the mascots of the Paris 2024 Olympics called?", "keys": [["Phryges"]], "gold": "2024 Summer Olympics"}
+{"id": 33, "q": "What was the longest duration of totality of the April 8, 2024 solar eclipse?", "keys": [["4 minutes and 28 seconds", "4 minutes 28 seconds", "4:28"]], "gold": "Solar eclipse of April 8, 2024"}
+{"id": 34, "q": "Near which town was the longest totality of the April 8, 2024 eclipse observed?", "keys": [["Nazas"]], "gold": "Solar eclipse of April 8, 2024"}
+{"id": 35, "q": "About how many people lived in the path of totality of the April 8, 2024 eclipse?", "keys": [["44 million"]], "gold": "Solar eclipse of April 8, 2024"}
+{"id": 36, "q": "When is the next total solar eclipse in the contiguous United States after April 2024?", "keys": [["August 22, 2044", "22 August 2044"]], "gold": "Solar eclipse of April 8, 2024"}
+{"id": 37, "q": "Who won the 2026 FIFA World Cup?", "keys": [], "gold": null, "unanswerable": true}
+{"id": 38, "q": "How much does a Raspberry Pi 5 with 8 GB of RAM cost?", "keys": [], "gold": null, "unanswerable": true}
+{"id": 39, "q": "How many parameters does GPT-5 have?", "keys": [], "gold": null, "unanswerable": true}
+{"id": 40, "q": "Who won the 2024 Tour de France?", "keys": [], "gold": null, "unanswerable": true}
+{"id": 41, "q": "How many transistors does the Apple M5 chip contain?", "keys": [], "gold": null, "unanswerable": true}
+{"id": 42, "q": "Which country hosted the 2024 Winter Youth Olympics?", "keys": [], "gold": null, "unanswerable": true}

@@ -1,0 +1,41 @@
+# Wikipedia: Blackwell (microarchitecture)
+<!-- https://en.wikipedia.org/w/index.php?title=Blackwell_(microarchitecture)&oldid=1384316943 (2026-11-07T18:16:31Z), CC BY-SA 4.0 -->
+
+Blackwell is a graphics processing unit (GPU) microarchitecture developed by Nvidia as the successor to the Hopper and Ada Lovelace microarchitectures.
+
+Named after statistician and mathematician David Blackwell, the name of the Blackwell architecture was leaked in 2022 with the B40 and B100 accelerators being confirmed in October 2023 with an official Nvidia roadmap shown during an investors presentation. It was officially announced at Nvidia's GTC 2024 keynote on March 18, 2024.
+
+== History ==
+In March 2022, Nvidia announced the Hopper datacenter architecture for AI accelerators. Demand for Hopper products was high throughout 2023's AI hype. The lead time from order to delivery of H100-based servers was between 36 and 52 weeks due to shortages and high demand. Nvidia reportedly sold 500,000 Hopper-based H100 accelerators in Q3 2023 alone. Nvidia's AI dominance with Hopper products led to the company increasing its market capitalization to over $2 trillion, behind only Microsoft and Apple.
+The Blackwell architecture is named after American mathematician David Blackwell who was known for his contributions to the mathematical fields of game theory, probability theory, information theory, and statistics. These areas have influenced or are implemented in transformer-based generative AI model designs or their training algorithms. Blackwell was the first African American scholar to be inducted into the National Academy of Sciences.
+In Nvidia's October 2023 Investor Presentation, its datacenter roadmap was updated to include reference to its B100 and B40 accelerators and the Blackwell architecture. Previously, the successor to Hopper was simply named on roadmaps as "Hopper-Next". Nvidia's updated roadmap emphasized the move from a two-year release cadence for datacenter products to yearly releases targeted for x86 and ARM systems.
+At the Graphics Technology Conference (GTC) on March 18, 2024, Nvidia officially announced the Blackwell architecture with focus placed on its B100 and B200 datacenter accelerators and associated products, such as the eight-GPU HGX B200 board and the 72-GPU NVL72 rack-scale system. Nvidia CEO Jensen Huang said that with Blackwell, "we created a processor for the generative AI era" and emphasized the overall Blackwell platform combining Blackwell accelerators with Nvidia's ARM-based Grace CPU. Nvidia touted endorsements of Blackwell from the CEOs of Google, Meta, Microsoft, OpenAI and Oracle. The keynote did not mention gaming.
+It was reported in October 2024 that there was a design flaw in the Blackwell architecture that had been fixed in collaboration with TSMC. According to Huang, the design flaw was "functional" and "caused the yield[s] to be low". By November 2024, Morgan Stanley was reporting that "the entire 2025 production" of Blackwell silicon was "already sold out".
+During the company's CES 2025 keynote, Nvidia announced that the foundation models for Blackwell will include models from Black Forest Labs (Flux), Meta AI, Mistral AI, and Stability AI.
+
+== Architecture ==
+Blackwell is an architecture designed for both datacenter compute applications, and for gaming and workstation applications with dedicated dies for each purpose.
+
+=== Process node ===
+Blackwell is fabricated on the custom 4NP process node for datacenter products, and on the custom 4N process node for consumer products, from TSMC. 4NP is an enhancement of the 4N node used for the Hopper and Ada Lovelace architectures. The Nvidia-specific 4NP process likely adds metal layers to the standard TSMC N4P technology. The GB100 die contains 104 billion transistors, a 30% increase over the 80 billion transistors in the previous generation Hopper GH100 die. As Blackwell cannot reap the benefits that come with a major process node advancement, it must achieve power efficiency and performance gains through underlying architectural changes.
+The GB100 die is at the reticle limit of semiconductor fabrication. The reticle limit in semiconductor fabrication is the maximum size of features that lithography machines can etch into a silicon die. Previously, Nvidia had nearly hit TSMC's reticle limit with GH100's 814 mm2 die. In order to not be constrained by die size, Nvidia's B100 accelerator utilizes two GB100 dies in a single package, connected with a 10 TB/s link that Nvidia calls the NV-High Bandwidth Interface (NV-HBI). NV-HBI is based on the NVLink 7 protocol. Nvidia CEO Jensen Huang said in an interview with CNBC that Nvidia had spent around $10 billion in research and development for Blackwell's NV-HBI die interconnect. Veteran semiconductor engineer Jim Keller, who had worked on AMD's K7, K12 and Zen architectures, criticized this figure and claimed that the same outcome could be achieved for $1 billion through using Ultra Ethernet rather than the proprietary NVLink system. The two connected GB100 dies are able to act like a large monolithic piece of silicon with full cache coherency between both dies. The dual die package totals 208 billion transistors. Those two GB100 dies are placed on top of a silicon interposer produced using TSMC's CoWoS-L 2.5D packaging technique.
+On the consumer side, Blackwell's largest die, GB202, measures in at 750mm2 which is 20% larger than AD102, Ada Lovelace's largest die. GB202 contains a total of 24,576 CUDA cores, 28.5% more than the 18,432 CUDA cores in AD102. GB202 is the largest consumer die designed by Nvidia since the 754mm2 TU102 die in 2018, based on the Turing microarchitecture. The gap between GB202 and GB203 has also gotten much wider compared to previous generations. GB202 features more than double the number of CUDA cores than GB203 which was not the case with AD102 over AD103.
+
+=== Streaming multiprocessor ===
+
+==== CUDA cores ====
+CUDA Compute Capability 10.0 and Compute Capability 12.0 are added with Blackwell.
+
+==== Tensor Cores ====
+The Blackwell architecture introduces fifth-generation Tensor Cores for AI compute and performing floating-point calculations. In the data center, Blackwell adds native support for sub-8-bit data types, including new Open Compute Project (OCP) community-defined MXFP6 and MXFP4 microscaling formats to improve efficiency and accuracy in low-precision computations. The previous Hopper architecture introduced the Transformer Engine, software to facilitate quantization of higher-precision models (e.g., FP32) to lower precision, for which Hopper has greater throughput. Blackwell's second-generation Transformer Engine adds support for MXFP4 and MXFP6. Using 4-bit data allows greater efficiency and throughput for model inference during generative AI training. Nvidia claims 20 petaflops (excluding the 2x gain the company claims for sparsity) of FP4 compute for the dual-GPU GB200 superchip.
+
+==== Ray Tracing Cores ====
+The fourth generation of ray tracing cores are introduced in Blackwell and include a new Triangle Cluster Intersection Engine for Mega Geometry and Linear Swept Spheres for accelerated ray tracing of finer details, like hair.
+
+=== AI Management Processor ===
+Blackwell introduces an AI Management Processor (AMP), a dedicated scheduler chip on the GPU built on RISC-V. It is designed to offload scheduling from the CPU to a greater degree than what previous generations did and helps the GPU better control its own resources. It is utilized through Windows Hardware-Accelerated GPU Scheduling (HAGS).
+
+== Blackwell dies ==
+Datacenter
+
+Consumer
